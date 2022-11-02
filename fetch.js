@@ -5,7 +5,10 @@ const getindexApi  = () =>{
     })
     .then(res => res.json())
     .then(result => {
-        console.log(result)
+        result.mahasiswa.map(data =>{
+            console.log(data.text)
+         })
+        // console.log(result)
     })
 }
 // const postApi  = () =>{
